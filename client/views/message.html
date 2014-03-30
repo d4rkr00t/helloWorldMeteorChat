@@ -1,9 +1,12 @@
 <template name="message">
   <div class="panel panel-default">
-    <div class="panel-heading">{{ username }} <a href="{{_id}}" class="delete-message">Удалить</a></div>
+    <div class="panel-heading">{{ username }}
+      {{#if isOwner owner}}
+        <a href="#" data-id="{{_id}}" class="delete-message">Удалить</a>
+      {{/if}}
+    </div>
     <div class="panel-body">
       {{ message }}
     </div>
-    <i class="glyphicon glyphicon-trash"></i>
   </div>
 </template>
