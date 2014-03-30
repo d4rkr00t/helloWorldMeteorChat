@@ -1,0 +1,15 @@
+<template name="page">
+  <div class="container">
+    <div class="page-header row">
+      <div class="col-md-7"><h2 class="text-muted">Awesome Meteor Realtime Chat!</h2></div>
+      <div class="col-md-5 login-buttons-container">{{> loginButtons }}</div>
+    </div>
+  </div>
+  <div class="container">
+    {{#if isLoggedIn }}
+      {{> chat}}
+    {{else}}
+      {{> hello}}
+    {{/if}}
+  </div>
+</template>

@@ -1,4 +1,19 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
 .login-buttons-container {
   margin-top: 26px;
   text-align: right;
+}
+
+.delete-message {
+  float: right;
+}
+
+.messages-container {
+  min-width: 500px;
+  overflow-y: hidden;
 }

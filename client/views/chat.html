@@ -1,0 +1,16 @@
+<template name="chat">
+  <div class="messages-container">
+    {{#each messages}}
+      {{> message }}
+    {{else}}
+      <div class="well">Пока нет сообщений! Напишите сообщение в форме внизу!</div>
+    {{/each}}
+  </div>
+
+  <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Отправить!</button>
+        </span>
+      </div><!-- /input-group -->
+</template>
